@@ -28,15 +28,14 @@ end
 #this end is should be deleted as there is one too many.
 end
 
-#self.cards_total should have the class name not self.
+#wrong indentation since this should still be in the class function it will need to be indented by one tab.
 def self.cards_total(cards)
   # total is undefined and should be assigned to 0
   total
   for card in cards
     total += card.value
-    #this return should be outside the for loop otherwise it will return on the first loop and not add up the rest of the cards.
+    #this return should be outside the for loop otherwise it will return on the first loop and not add up the rest of the cards. Also total should be converted to a string otherwise it will not be able to be concatenated with the string. Grammatically it should have a space before the total so that it is spaced from "of".
     return "You have a total of" + total
-    #total should be converted to a string otherwise it will not be able to be concatenated with the string.
   end
 end
 #the end of the class is here and requires an end.
